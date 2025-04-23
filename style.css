@@ -1,0 +1,123 @@
+/* Estilização geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #222;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+/* Seção de pesquisa */
+.home-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+.search-bar {
+  width: 80%;
+  max-width: 500px;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* Carrossel de banners */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #ddd;
+}
+
+.banner {
+  min-width: 300px;
+  height: 150px;
+  background-color: #555;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 8px;
+  flex: 0 0 auto;
+}
+
+/* Cards de lojistas */
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.card {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.socials img {
+  width: 24px;
+  margin: 0.5rem;
+}
+
+.btn-site {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .header, .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .carousel {
+    flex-direction: column;
+  }
+
+  .banner {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .cards-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
