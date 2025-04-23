@@ -10,14 +10,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 8rem;
+  padding: 1rem 2rem;
   background-color: #222;
   color: white;
   flex-wrap: wrap;
-}
-
-.logo img {
-  width: 180px;
 }
 
 .menu a {
@@ -48,19 +44,30 @@ body {
   gap: 1rem;
   padding: 1rem;
   background-color: #ddd;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }
 
 .banner {
-  min-width: 300px;
+  min-width: 250px;
+  max-width: 350px;
   height: 150px;
-  background-color: #555;
+  background: linear-gradient(135deg, #4c4cff, #1a1aff);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 10px;
   flex: 0 0 auto;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 /* Cards de lojistas */
@@ -112,7 +119,8 @@ body {
   }
 
   .carousel {
-    flex-direction: column;
+    flex-direction: row;
+    overflow-x: auto;
   }
 
   .banner {
