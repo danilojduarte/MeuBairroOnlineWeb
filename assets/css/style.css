@@ -10,10 +10,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 8rem;
   background-color: #222;
   color: white;
   flex-wrap: wrap;
+}
+
+.logo img {
+  width: 180px;
 }
 
 .menu a {
